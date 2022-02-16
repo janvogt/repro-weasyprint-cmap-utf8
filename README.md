@@ -18,9 +18,9 @@ to
 4. > ./p2t.py
 5. See that the character has been recovered in example_fixed.txt but not in example.txt
 
-# Requiremnts
+# Requirements
 
-This needs the python packages weasyprint and pdftotext installed.
+This needs the python packages weasyprint (version 54.1) and pdftotext installed.
 
 If you have a working nix setup use the provided `default.nix` by calling
 > nix-shell
