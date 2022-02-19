@@ -8,9 +8,11 @@ let
       sha256 = "0qkygnn6hxyfhvykgf4rjmi1lz77bkxdz3ab2xfpcdmfwidm7gf6";
     })
     { };
+  weasyprint = pkgs.python39Packages.callPackage (import ./weasyprint.nix) { };
 in
 pkgs.mkShell {
   buildInputs = builtins.attrValues {
-    inherit (pkgs.python39Packages) weasyprint pdftotext;
+    inherit (pkgs.python39Packages) pdftotext;
+    inherit weasyprint;
   };
 }
