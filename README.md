@@ -18,6 +18,8 @@ to
 4. > ./p2t.py
 5. See that the character has been recovered in example_fixed.txt but not in example.txt
 
+Step 3 is not necessary anymore after [https://github.com/Kozea/WeasyPrint/issues/1571#issuecomment-1043437045](https://github.com/Kozea/WeasyPrint/issues/1571#issuecomment-1043437045) is fixed.
+
 # Requirements
 
 This needs the python packages weasyprint (version 54.1) and pdftotext installed.
